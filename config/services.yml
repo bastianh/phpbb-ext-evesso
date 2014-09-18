@@ -1,0 +1,9 @@
+services:
+
+  auth.provider.oauth.service.evesso:
+    class: dafire\evesso\auth\auth_provider_oauth_service_evesso
+    arguments:
+      - @config
+      - @request
+    tags:
+      - { name: auth.provider.oauth.service }
